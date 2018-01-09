@@ -7,6 +7,6 @@ git add .
 git  commit  -m "提交说明"
 # 查看 工作区状态
 git status
-# HEAD 最新提交的版本 HEAD^ 上一个版本 HEAD^^^ 上上一个版本  
+# HEAD 最新提交的版本 HEAD^ 上一个版本 HEAD^^^ 上上一个版本
 git reset  --hard 000000000
 ```
