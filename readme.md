@@ -1,2 +1,5 @@
 git  is a distributed version control system.
-git  is ok.
+git  is a distributed version control system.
+git  is a distributed version control system.
+git  is a distributed version control system.
+git  is a distributed version control system.
