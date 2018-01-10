@@ -15,4 +15,9 @@ git rest HEAD  readme.md
 git checkout  -- readme.md
 # 版本库  删除文件
 git  rm   readme.md
+
+<!- ssh 管理代码： 生成公私钥 ， 公钥放到github上 ，私钥自己留着 -->
+<!-- https管理代码：需要用户名 密码、或者  生成私人访问token -->
+ssh-keygen -t rsa -C  "lingshui2008@qq.com"
+
 ```
