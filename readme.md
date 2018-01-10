@@ -20,4 +20,11 @@ git  rm   readme.md
 <!-- https管理代码：需要用户名 密码、或者  生成私人访问token -->
 ssh-keygen -t rsa -C  "lingshui2008@qq.com"
 
+
+<!-- 提交到远程仓库 -->
+#添加远程仓库 进行关联 （origin 为远程仓库的名称   + 地址）
+git remote  add origin git@github.com:BigManing/gitLearn.git
+# 提交到远程仓库的master分支   -u  设定 pull push 的 上游 （upstream）
+git push  -u  origin  master
+
 ```
