@@ -7,7 +7,7 @@ git add .
 git  commit  -m "提交说明"
 # 查看 工作区状态   这里面有很多的命令提示
 git status
-# HEAD 最新提交的版本 HEAD^ 上一个版本 HEAD^^^ 上上一个版本
+#回退到某个节点 HEAD 最新提交的版本 HEAD^ 上一个版本 HEAD^^^ 上上一个版本
 git reset  --hard 000000000
 #  把暂存区的修改  撤销掉  重新放到工作区（撤销了先前add的操作）
 git rest HEAD  readme.md
