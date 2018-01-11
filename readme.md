@@ -37,3 +37,20 @@
     git remote  add origin git@github.com:BigManing/gitLearn.git
     # 提交到远程仓库的master分支   -u  设定 pull push 的 上游 （upstream）
     git push  -u  origin  master
+
+###   分支管理
+    #查看
+    git branch
+    #创建
+    git branch  xxx
+    #切换
+    git checkout  xxx
+
+    #创建并切换到新分支
+    git checkout  -b  xxx
+    
+    #合并分支到当前分支
+    git merge xxx
+    #删除分支
+    git branch -d xxx
+    
