@@ -54,3 +54,5 @@
     #删除分支
     git branch -d xxx
     
+- 解决冲突
+如果两个分支都对相同文件做了修改，merge时会提示我们先修改  add   push
