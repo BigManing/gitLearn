@@ -86,7 +86,7 @@
         git stash  apply stash@{0}
 ###   标签
 
-- 创建 
+        - 创建 
         git tag v1.0 <或指定提交号>
         #查看标签
         git tag 
