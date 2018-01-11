@@ -39,20 +39,34 @@
     git push  -u  origin  master
 
 ###   分支管理
-    #查看
-    git branch
-    #创建
-    git branch  xxx
-    #切换
-    git checkout  xxx
+- 创建 合并命令
 
-    #创建并切换到新分支
-    git checkout  -b  xxx
+        #查看
+        git branch
+        #创建
+        git branch  xxx
+        #切换
+        git checkout  xxx
+
+        #创建并切换到新分支
+        git checkout  -b  xxx
+        
+        #合并分支到当前分支
+        git merge xxx
+        #删除分支
+        git branch -d xxx
     
-    #合并分支到当前分支
-    git merge xxx
-    #删除分支
-    git branch -d xxx
-    
+
 - 解决冲突
-如果两个分支都对相同文件做了修改，merge时会提示我们先修改  add   push
+
+  如果两个分支都对相同文件做了修改，merge时会提示我们先修改  add   push
+
+- 分支管理策略
+        
+        #在master分支上运行这句话
+        git  meger  --no-ff  -m "不使用 fastforward模式"  dev
+
+    master为稳定分支，发布正式版本。
+    dev分支为开发环境，每个人再新建自己的分支，开发好后向dev分支合并。待dev开发ok了再向master分支合并。
+    
+    ![正常开发策略](https://cdn.liaoxuefeng.com/cdn/files/attachments/001384909239390d355eb07d9d64305b6322aaf4edac1e3000/0)
