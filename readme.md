@@ -86,9 +86,28 @@
         git stash  apply stash@{0}
 ###   标签
 
-        - 创建 
+ - 创建 
+    
         git tag v1.0 <或指定提交号>
         #查看标签
+
+ - 查看 
+
         git tag 
         #显示详情
         git show  v1.0
+        # 切换到tag处的工作目录
+        git checkout  v1.0
+
+ - 向远程仓库
+ 
+        #推送指定tag
+        git push origin v1.0
+        #推送所有tag
+        git push origin --tags 
+        #删除本地标签
+        git tag -d v0.4        
+        #删除远程标签
+        git push  origin :refs/tags/v0.4
+
+
