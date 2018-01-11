@@ -70,5 +70,17 @@
     dev分支为开发环境，每个人再新建自己的分支，开发好后向dev分支合并。待dev开发ok了再向master分支合并。
     
     ![正常开发策略](https://cdn.liaoxuefeng.com/cdn/files/attachments/001384909239390d355eb07d9d64305b6322aaf4edac1e3000/0)
-
- issue-100  test
+- bug分支
+    
+    master：上面有bug
+    dev：开发到一半 暂时还不能commit到dev本地分支
+    此时，我们需要暂存dev的工作状态，把bug修复好后，在切换过来就ok。
+        
+        #暂存
+        git  stash
+        #查看暂存
+        git stash list
+        #恢复暂存(同时删除备份)
+        git stash pop
+        #恢复暂存（不会删除备份）
+        git stash  apply stash@{0}
