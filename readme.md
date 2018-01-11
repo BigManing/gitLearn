@@ -84,4 +84,11 @@
         git stash pop
         #恢复暂存（不会删除备份）
         git stash  apply stash@{0}
+###   标签
 
+- 创建 
+        git tag v1.0 <或指定提交号>
+        #查看标签
+        git tag 
+        #显示详情
+        git show  v1.0
