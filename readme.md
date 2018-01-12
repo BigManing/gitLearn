@@ -172,7 +172,7 @@ fork别人项目-> clone->修改提交->pull->request
 - 禁用shell登录
 
         vim  /etc/passwd
-        #把下面这句话改成下面那句
+        #把下面这句话改成后面那句
         git:x:1001:1001:,,,:/home/git:/bin/bash
         git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell
 
