@@ -58,8 +58,10 @@
         
         #合并分支到当前分支
         git merge xxx
-        #删除分支
-        git branch -d xxx
+        #删除本地分支
+        git branch -d dev
+        #删除远程分支
+        git push   origin --delete   dev
     
 
 - 解决冲突
@@ -113,6 +115,8 @@
         #删除本地标签
         git tag -d v0.4        
         #删除远程标签
+        git push  origin --delete   v0.9
+        #这个也行
         git push  origin :refs/tags/v0.4
 
 ###   使用github  码云
