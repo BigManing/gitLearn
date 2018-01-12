@@ -11,12 +11,17 @@
     git status
 
 ###  回退到某个节点 
-    #回退到某个节点 HEAD 最新提交的版本 HEAD^ 上一个版本 HEAD^^^ 上上一个版本
+    #回退到某个节点 HEAD 最新提交的版本 HEAD^ 上一个版本 HEAD^^^ 上上一个版本    节点之后的修改都没有了  这个尽量少用
     git reset  --hard 000000000
+    # 回退到某个节点   好消息是 修改内容还在
+    git reset   000000000
     #  把暂存区的修改  撤销掉  重新放到工作区（撤销了先前add的操作）
     git rest HEAD  readme.md
     # 丢弃工作区的修改(以版本库的为准)  
     git checkout  -- readme.md
+    # 查看commit过的 log引用 
+    git reflog 
+
 
 ### 删除文件  
     git  rm   readme.md
@@ -122,4 +127,13 @@ fork别人项目-> clone->修改提交->pull->request
     git push  github master
     git push gitee  master
 
+ ###  gitignore
 
+有的时候 值允许在本地工作区中有，不希望推送到仓库中
+。我们需要在根目录下建立一个`.ignore`文件，提交的时候忽略指定文件（官方实例）：https://github.com/github/gitignore。如果文件被忽略了就不会被追踪。
+
+    touch .gitignore
+
+查看文件被哪个规则忽略了：
+
+    git check-ignore  -v  readme.md
