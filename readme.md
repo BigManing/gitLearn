@@ -129,8 +129,8 @@ fork别人项目-> clone->修改提交->pull->request
 
  ###  gitignore
 
-有的时候 值允许在本地工作区中有，不希望推送到仓库中
-。我们需要在根目录下建立一个`.ignore`文件，提交的时候忽略指定文件（官方实例）：https://github.com/github/gitignore。如果文件被忽略了就不会被追踪。
+有的时候只允许在本地工作区中有，不希望推送到仓库中
+。我们需要在根目录下建立一个`.gitignore`文件，提交的时候忽略指定文件（官方实例）：https://github.com/github/gitignore。如果文件被忽略了就不会被追踪。
 
     touch .gitignore
 
