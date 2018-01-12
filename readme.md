@@ -110,4 +110,16 @@
         #删除远程标签
         git push  origin :refs/tags/v0.4
 
+###   使用github  码云
+fork别人项目-> clone->修改提交->pull->request
+
+多远程仓库可以是多个 ，仓库名要区分开：
+
+    git  remote  rm origin
+    git remote  add github  xxx
+    git remote add gitee xxx
+
+    git push  github master
+    git push gitee  master
+
 
