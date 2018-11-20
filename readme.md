@@ -65,14 +65,14 @@
     
 - 分支与远程仓库的映射
 　　　　　
-     　　```sh
-        #设置追踪的远程仓库（origin/dev）
-      　  git branch -u origin/dev
-      　  #取消映射关系
-      　  git branch --unset-upstream    
-      　  #查看映射关系
-      　  git branch -vv  
-           ```
+```sh
+#设置追踪的远程仓库（origin/dev）
+git branch -u origin/dev
+#取消映射关系
+git branch --unset-upstream    
+#查看映射关系
+git branch -vv  
+```
 
 - 解决冲突
 
