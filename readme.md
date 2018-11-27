@@ -141,6 +141,16 @@ fork别人项目-> clone->修改提交->pull->request
     git push  github master
     git push gitee  master
 
+#### fork更新自己仓库内容为最新内容。
+
+```sh
+git remote add upstream xxxxxx
+git fetch upstream
+git checkout master
+git rebase upstream/master
+git push -f origin master
+```
+
  ###  gitignore
 
 有的时候只允许在本地工作区中有，不希望推送到仓库中
