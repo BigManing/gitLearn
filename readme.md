@@ -11,7 +11,8 @@
 ###  查看状态  （ 这里面有很多的命令提示）
     git status
 
-###  回退到某个节点 
+
+###  回退到某个节点  参考 https://www.cnblogs.com/vcmq/p/10162051.html
     #回退到某个节点 HEAD 最新提交的版本 HEAD^ 上一个版本 HEAD^^^ 上上一个版本    节点之后的修改都没有了  这个尽量少用
     git reset  --hard 000000000
     # 回退到某个节点   好消息是 修改内容还在
@@ -56,7 +57,7 @@
         #创建并切换到新分支
         git checkout  -b  xxx
         
-        #合并分支到当前分支
+        #合并xxx分支到当前分支
         git merge xxx
         #删除本地分支
         git branch -d dev
@@ -68,6 +69,8 @@
 ```sh
 #设置追踪的远程仓库（origin/dev）
 git branch -u origin/dev
+#设置追踪的远程仓库（outway/bug）(一般用于第一次推送到outway远程仓库，并设置bug分支为当前分支的上游)
+git push -u outway bug
 #取消映射关系
 git branch --unset-upstream    
 #查看映射关系
@@ -86,7 +89,7 @@ git branch -vv
     master为稳定分支，发布正式版本。
     dev分支为开发环境，每个人再新建自己的分支，开发好后向dev分支合并。待dev开发ok了再向master分支合并。
     
-    ![正常开发策略](https://cdn.liaoxuefeng.com/cdn/files/attachments/001384909239390d355eb07d9d64305b6322aaf4edac1e3000/0)
+    ![正常开发策略](./pic/branch.png)
 - bug分支
     
     master：上面有bug
@@ -101,7 +104,7 @@ git branch -vv
         git stash pop
         #恢复暂存（不会删除备份）
         git stash  apply stash@{0}
-###   标签
+###   标签（tag）
 
  - 创建 
     
@@ -126,7 +129,7 @@ git branch -vv
         git tag -d v0.4        
         #删除远程标签
         git push  origin --delete   v0.9
-        #这个也行
+        #删除远程标签
         git push  origin :refs/tags/v0.4
 
 ###   使用github  码云
