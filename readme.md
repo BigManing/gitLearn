@@ -13,8 +13,11 @@
 
 
 ###  回退到某个节点  参考 https://www.cnblogs.com/vcmq/p/10162051.html
-    #回退到某个节点 HEAD 最新提交的版本 HEAD^ 上一个版本 HEAD^^^ 上上一个版本    节点之后的修改都没有了  这个尽量少用
-    git reset  --hard 000000000
+
+```
+    #回退到某个节点 HEAD 最新提交的版本 HEAD^ 上一个版本 HEAD^^^ 上上一个版本   
+    # --hard节点之后的修改都没有了  这个尽量少用   如果需要之前文件 就用 --soft 
+    git reset  --hard 000000000  
     # 回退到某个节点   好消息是 修改内容还在
     git reset   000000000
     #  把暂存区的修改  撤销掉  重新放到工作区（撤销了先前add的操作）
@@ -23,7 +26,14 @@
     git checkout  -- readme.md
     # 查看commit过的 log引用 
     git reflog 
-
+```
+### 强制覆盖本地分支代码
+```
+# 回退到某个节点 HEAD 最新提交的版本 HEAD^ 上一个版本 HEAD^^^ 上上一个版本   
+git fetch --all
+git reset --hard origin/dev
+git pull
+```  
 
 ### 删除文件  
     git  rm   readme.md
