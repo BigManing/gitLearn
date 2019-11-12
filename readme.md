@@ -79,12 +79,14 @@ git pull
 ```sh
 #设置追踪的远程仓库（origin/dev）
 git branch -u origin/dev
-#设置追踪的远程仓库（outway/bug）(一般用于第一次推送到outway远程仓库，并设置bug分支为当前分支的上游)
+#设置追踪的远程仓库（outway/bug）(一般用于第一次推送到outway远程仓库，并设置该分支为当前分支的上游)
 git push -u outway bug
 #取消映射关系
 git branch --unset-upstream    
 #查看映射关系
 git branch -vv  
+# 下面这个也能看映射关系
+git remote -v
 ```
 
 - 解决冲突
