@@ -216,3 +216,6 @@ git push -f origin master
 - 客户端 clone 仓库 
 
         git clone git@xxxx:/srv/sample.git
+
+###  不错git文章
+[一个成功的Git分支模型](https://www.xuanzhangjiong.top/2019/01/30/%E4%B8%80%E4%B8%AA%E6%88%90%E5%8A%9F%E7%9A%84Git%E5%88%86%E6%94%AF%E6%A8%A1%E5%9E%8B/)
